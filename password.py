@@ -26,19 +26,19 @@ class User:
                     if password.phone_number == number:
                         return password
 
-            # @classmethod
-            # def password_exist(cls, number):
-            #     '''
-            #     Method that checks if a contact exists from the contact list.
-            #     Args:
-            #         number: Phone number to search if it exists
-            #     Returns :
-            #         Boolean: True or false depending if the contact exists
-            #     '''
-            #     for password in cls.password_list:
-            #         if password.phone_number == number:
-            #             return True
-            #     return False
+            @classmethod
+            def password_exist(cls, number):
+                '''
+                Method that checks if a contact exists from the contact list.
+                Args:
+                    number: Phone number to search if it exists
+                Returns :
+                    Boolean: True or false depending if the contact exists
+                '''
+                for password in cls.password_list:
+                    if password.phone_number == number:
+                        return True
+                return False
             #
             # @classmethod
             # def display_passwords(cls):
