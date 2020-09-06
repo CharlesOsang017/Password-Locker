@@ -33,10 +33,10 @@ def check_existing_passwords(number):
         '''
         return User.password_exist(number)
 
-#
-# def display_passwords():
-#        return User.display_passwords()
-#
+
+def display_passwords():
+       return User.display_passwords()
+
 # def main():
 #     print("Hello Welcome to  Password-Locker. What is your name?")
 #     password_name = input()
