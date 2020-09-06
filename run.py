@@ -21,12 +21,12 @@ def del_password(password):
     '''
     password.delete_password()
 
-# def find_password(number):
-#      '''
-#     Function that finds a contact by number and returns the contact
-#     '''
-#      return User.find_by_number(number)
-#
+def find_password(number):
+     '''
+    Function that finds a contact by number and returns the contact
+    '''
+     return User.find_by_number(number)
+
 # def check_existing_passwords(number):
 #         '''
 #         Function that check if a contact exists with that number and return a Boolean
