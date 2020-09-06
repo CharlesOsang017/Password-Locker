@@ -27,12 +27,12 @@ def find_password(number):
     '''
      return User.find_by_number(number)
 
-# def check_existing_passwords(number):
-#         '''
-#         Function that check if a contact exists with that number and return a Boolean
-#         '''
-#         return User.password_exist(number)
-#
+def check_existing_passwords(number):
+        '''
+        Function that check if a contact exists with that number and return a Boolean
+        '''
+        return User.password_exist(number)
+
 #
 # def display_passwords():
 #        return User.display_passwords()
