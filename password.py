@@ -39,10 +39,10 @@ class User:
                     if password.phone_number == number:
                         return True
                 return False
-            #
-            # @classmethod
-            # def display_passwords(cls):
-            #     '''
-            #     method that returns the contact list
-            #     '''
-            #     return cls.password_list
+
+            @classmethod
+            def display_passwords(cls):
+                '''
+                method that returns the contact list
+                '''
+                return cls.password_list
