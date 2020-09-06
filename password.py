@@ -12,20 +12,20 @@ class User:
 
             def delete_password(self):
                 User.password_list.remove(self)
-            #
-            # @classmethod
-            # def find_by_number(cls, number):
-            #     '''
-            #       Method that takes in a number and returns a contact that matches that number.
-            #       Args:if
-            #           number: Phone number to search for
-            #       Returns :
-            #           Contact of person that matches the number.
-            #       '''
-            #     for password in cls.password_list:
-            #         if password.phone_number == number:
-            #             return password
-            #
+
+            @classmethod
+            def find_by_number(cls, number):
+                '''
+                  Method that takes in a number and returns a contact that matches that number.
+                  Args:if
+                      number: Phone number to search for
+                  Returns :
+                      Contact of person that matches the number.
+                  '''
+                for password in cls.password_list:
+                    if password.phone_number == number:
+                        return password
+
             # @classmethod
             # def password_exist(cls, number):
             #     '''
