@@ -19,11 +19,14 @@ This is a password-locker project.This project is based in storing your account 
 
 # Behaviour Driven Development
 
-| Column 1       | Column 2     | Column 3     |
+| Behaviour     | Input    | Output    |
 | :------------- | :----------: | -----------: |
-|  Cell Contents | More Stuff   | And Again    |
-| You Can Also   | Put Pipes In | Like this | |       
-|  Cell Contents | More Stuff   | And Again    |
-| You Can Also   | Put Pipes In | Like this | |  
-     | You Can Also   | Put Pipes In | Like this | |       
-|  Cell Contents | More Stuff   | And Again    |
+|  Navigate to the site | run: ./run.py   | Welcome to Password-Locker    |
+| Desplays prompt for creating an account   | cc | create a new account | |       
+|  Desplays prompt for user credentials | dc   | Desplays a list of user credentials    |
+| Desplays a prompt for finding your account   | fc | Retrieves your account when you key in your phone number | |  
+     | Desplays a prompt for exiting an acount   | ex | Thank you for visiting Password-Locker..Good Bye | | 
+     
+ ## Licence
+ MIT      
+
