@@ -16,11 +16,11 @@ class User:
             @classmethod
             def find_by_number(cls, number):
                 '''
-                  Method that takes in a number and returns a contact that matches that number.
+                  Method that takes in a number and returns a password that matches that number.
                   Args:if
                       number: Phone number to search for
                   Returns :
-                      Contact of person that matches the number.
+                     password of person that matches the number.
                   '''
                 for password in cls.password_list:
                     if password.phone_number == number:
@@ -29,11 +29,11 @@ class User:
             @classmethod
             def password_exist(cls, number):
                 '''
-                Method that checks if a contact exists from the contact list.
+                Method that checks if a password exists from the password list.
                 Args:
                     number: Phone number to search if it exists
                 Returns :
-                    Boolean: True or false depending if the contact exists
+                    Boolean: True or false depending if the password exists
                 '''
                 for password in cls.password_list:
                     if password.phone_number == number:
@@ -43,6 +43,6 @@ class User:
             @classmethod
             def display_passwords(cls):
                 '''
-                method that returns the contact list
+                method that returns the password list
                 '''
                 return cls.password_list

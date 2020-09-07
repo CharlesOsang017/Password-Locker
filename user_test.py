@@ -8,7 +8,7 @@ class TestUser(unittest.TestCase):
 
 
     '''
-    Test class that defines test cases for the contact class behaviours.
+    Test class that defines test cases for the password class behaviours.
 
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
@@ -32,8 +32,8 @@ class TestUser(unittest.TestCase):
         # other test cases here
     def test_save_multiple_password(self):
         '''
-        test_save_multiple_contact to check if we can save multiple contact
-        objects to our contact_list
+        test_save_multiple_contact to check if we can save multiple password
+        objects to our password_list
         '''
         self.new_password.save_password()
         test_password = User("Test", "user", "0746170913", "charlesosango02@gmail.com")  # new contact
@@ -52,8 +52,8 @@ class TestUser(unittest.TestCase):
 
     def test_save_password(self):
         '''
-        test_save_contact test case to test if the contact object is saved into
-        the contact list
+        test_save_password test case to test if the password object is saved into
+        the password list
         '''
         self.new_password.save_password()  # saving the new contact
         self.assertEqual(len(User.password_list), 1)
@@ -62,9 +62,9 @@ class TestUser(unittest.TestCase):
 
     def test_save_multiple_password(self):
         '''
-        test_save_multiple_contact to chec
-        k if we can save multiple contact
-        objects to our contact_list
+        test_save_multiple_password to chec
+        k if we can save multiple password
+        objects to our password_list
         '''
         self.new_password.save_password()
         test_password = User("Test", "user", "0746170913", "charlesosango02@gmail.com")  # new contact
@@ -74,7 +74,7 @@ class TestUser(unittest.TestCase):
         # More tests above
     def test_delete_password(self):
         '''
-        test_delete_contact to test if we can remove a contact from our contact list
+        test_delete_password to test if we can remove a password from our password list
         '''
         self.new_password.save_password()
         test_password = User("Test", "user", "0746170913", "charlesosango02@gmail.com")  # new contact
@@ -85,7 +85,7 @@ class TestUser(unittest.TestCase):
 
     def test_find_password_by_number(self):
         '''
-        test to check if we can find a contact by phone number and display information
+        test to check if we can find a password by phone number and display information
         '''
 
         self.new_password.save_password()
@@ -99,7 +99,7 @@ class TestUser(unittest.TestCase):
 
     def test_password_exists(self):
          '''
-         est to check if we can return a Boolean  if we cannot find the contact.
+         est to check if we can return a Boolean  if we cannot find the password.
          '''
 
          self.new_password.save_password()
@@ -111,7 +111,7 @@ class TestUser(unittest.TestCase):
 
     def test_display_all_passwords(self):
           '''
-          method that returns a list of all contacts saved
+          method that returns a list of all passwords saved
           '''
 
           self.assertEqual(User.display_passwords(),User.password_list)
