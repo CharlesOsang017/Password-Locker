@@ -3,33 +3,33 @@ from password import User
 
 def create_password(fname,lname,phone,email):
     '''
-    Function to create a new contact
+    Function to create a new password
     '''
     new_password = User(fname,lname,phone,email)
     return new_password
 
 def save_passwords(password):
     '''
-    Function to save contact
+    Function to save password
     '''
     password.save_password()
 
 
 def del_password(password):
     '''
-    Function to delete a contact
+    Function to delete a password
     '''
     password.delete_password()
 
 def find_password(number):
      '''
-    Function that finds a contact by number and returns the contact
+    Function that finds a password by number and returns the contact
     '''
      return User.find_by_number(number)
 
 def check_existing_passwords(number):
         '''
-        Function that check if a contact exists with that number and return a Boolean
+        Function that check if a password exists with that number and return a Boolean
         '''
         return User.password_exist(number)
 
@@ -45,12 +45,12 @@ def main():
     print('\n')
 
     while True:
-                    print("Use these short codes : cc - create a new contact, dc - display contacts, fc -find a contact, ex -exit the contact list ")
+                    print("Use these short codes : cc - create a new account, dc - display accounts credentials, fc -find a account, ex -exit the account list ")
 
                     short_code = input().lower()
 
                     if short_code == 'cc':
-                            print("New Contact")
+                            print("New Account credentials")
                             print("-"*10)
 
                             print ("First name ....")
@@ -74,7 +74,7 @@ def main():
                     elif short_code == 'dc':
 
                             if display_passwords():
-                                    print("Here is a list of all your contacts")
+                                    print("Here is a list of all your accounts credentials")
                                     print('\n')
 
                                     for password in display_passwords():
@@ -85,7 +85,7 @@ def main():
                                     print('\n')
                             else:
                                     print('\n')
-                                    print("You dont seem to have any contacts saved yet")
+                                    print("You dont seem to have any account saved yet")
                                     print('\n')
 
                     elif short_code == 'fc':
@@ -101,7 +101,7 @@ def main():
                                     print(f"Phone number.......{search_password.phone_number}")
                                     print(f"Email address.......{search_password.email}")
                             else:
-                                    print("That contact does not exist")
+                                    print("That account does not exist")
 
                     elif short_code == "ex":
                             print("Thank you for using Password-Locker..Good Bye ......")
